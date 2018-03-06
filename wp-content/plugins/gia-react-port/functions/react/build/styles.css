@@ -1,0 +1,545 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fcfaf4;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+/* Header here */
+
+.header-brand {
+    margin: auto;
+    padding: 5px;
+    background-color: #f8f8f8;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-brand-name {
+    font-family: 'Quintessential', cursive;
+    font-size: 2em;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.social-media-icons {
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-search {
+    border-color: #080808;
+}
+
+.nav-highlight {
+    margin: 0px !important;
+    font-weight: bold;
+}
+
+
+/* Content here */
+
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+.content {
+    margin: auto;
+    max-width: 1180px;
+}
+
+
+/* Section header goes here */
+
+.homes-header, .review-header, .stories-header {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3em;
+    font-family: 'Vidaloka', serif;
+}
+
+
+/* Search form goes here */
+
+.search-form, .adv-search-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(87, 188, 144, 0.25);
+    margin: auto;
+}
+
+.search-form > .container {
+    text-align: center;
+}
+
+#experience {
+    width: 150px;
+}
+
+#check-in, #check-out {
+    width: 175px;
+}
+
+#numGuests, #numRooms {
+    margin-right: 10px;
+    width: 75px;
+}
+
+#btn-reset {
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Search results and house section goes here. */
+.search-wrapper {
+    
+}
+
+.house-list {
+    list-style: none;
+    padding: 0px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.house-item-wrapper {
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.house-item {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-right: outset 1px #A37E58;
+    border-bottom: solid 2px #A37E58;
+    border-radius: 20px;
+}
+
+.house-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.house-info {
+    padding: 10px;
+    height: 50px;
+    background: linear-gradient(rgba(50, 50, 50, 1), rgba(255, 255, 255, 0));
+}
+
+.house-name, .house-reviews {
+    font-size: 3vh;
+    color: white;
+   font-family: 'Philosopher', sans-serif;
+}
+
+.house-name {
+    font-weight: bold;
+}
+
+.house-name:hover {
+    text-decoration: none !important;
+    color: yellow !important;
+    cursor: pointer !important;
+}
+
+.house-reviews {
+    float: right;
+}
+
+.house-reviews:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.house-highlights {
+    
+}
+
+.highlights-label {
+    display: block;
+}
+
+.house-short-description, .house-main-features {
+    padding: 10px;
+}
+
+.house-main-features {
+    border-top: solid 1px rgb(200, 200, 200);
+}
+
+.btn-options {
+    width: 50%;
+}
+
+#btn-more {
+    background-color: skyblue;
+}
+
+#btn-book {
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #00ff63;
+}
+
+
+/* User review pane goes here */
+.review-section, .stories-section {
+    height: 70vh;
+}
+
+.review-section {
+    background-color: #57BC90;
+}
+
+.stories-section {
+    background-color: #fcfaf4;
+}
+
+.review-wrapper, .stories-wrapper {
+    padding: 0px;
+}
+
+
+/* Slider goes here */
+
+.slider-wrapper {
+    width: 100%;
+}
+
+.slider-content {
+    height: inherit;
+}
+
+.slider-buttons {
+    list-style: none;
+    padding: 0px !important;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-slide {
+    display: inline;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.btn-slide:hover {
+    filter: invert(100%);
+}
+
+/* Slide goes here */
+.slide-wrapper {
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.slide-title {
+    padding: 0 0 20px 0;
+}
+
+.slide-image {
+    max-width: 800px;
+    height: 350px;
+    border-radius: 5px;
+    margin: auto;
+    background-size: cover;
+    background-position: 25% 50%;
+}
+
+
+.slide-caption {
+    margin-top: 20px;
+    height: 90px;
+}
+
+.slide-content, .slide-name, .slide-title {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2.25vh;
+    display: block;
+}
+
+.slide-title {
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+.slide-name {
+    font-size: 2vh;
+    opacity: 0.6;
+}
+
+
+/* Newsletter here */
+
+.newsletter-space {
+    padding: 195px;;
+}
+
+.subscription-overflow {
+    display: block;
+    padding: 10px;
+    background-color: #B4906C;
+    color: white;
+}
+
+.newsletter, .sticky-newsletter {
+    padding: 10px;
+    text-align: center;
+}
+
+.newsletter, .sticky-newsletter {
+    display: block;
+    background-color: #303030;
+    border-top: solid 3px #ff7d63;
+    color: white;
+    font-size: 1.25em;
+}
+
+.sticky-newsletter, .subscription-overflow {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+
+/* Footer here */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A2930;
+    z-index: 30;
+    border-top: solid 5px #3cc47c;
+}
+
+footer > .container {
+    margin: auto;
+}
+
+.footer-section-wrapper {
+    min-height: 150px;
+}
+
+.footer-section {
+    color: white;
+    padding: 10px;
+    height: 100%;
+}
+
+.footer-payment, .footer-contact, .footer-subscribe {
+    margin-bottom: 15px;
+    font-weight: 350;
+    font-size: 2vh;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.address-bar, .telephone {
+    font-weight: normal;    
+    font-size: 1.5vh;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.copyright {
+    border-top: solid 1px #3cc47c;
+    padding: 20px;
+}
+
+.copyright-name {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.75vh;
+}
+
+.payment-list {
+    list-style: none;
+    padding: 0px !important;
+}
+
+.card {
+    display: inline-block;
+}
+
+.payment-image {
+    width: 75px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+/* Custom Bootstrap codes  */
+.col-md-4, .col-sm-6 {
+    padding: 0 !important;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.control-label {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carousel-inner, .carousel-control {
+    border-radius: 50px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    opacity: 0.15;
+}
+
+.btn-group-justified > .btn {
+    width: 50%;
+}
+
+.navbar-right {
+    font-size: 1.6vh;
+}
+
+
+/* Other supplementary styles goes here */
+.hidden {
+    display: none;
+}
+
+.transparent {
+    background: none !important;
+    color: none;
+}
+
+.inverted {
+    filter: invert(100%);
+}
+
+/* Media queries goes here */
+@media(max-width: 550px) {
+    .review-section, .stories-section {
+        height: auto;
+    }
+    
+    .homes-header, .review-header, .stories-header {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 2em;
+    }
+    
+    .slide-image {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media(max-width: 767px) {
+    .house-item-wrapper {
+        width: 100%;
+        display: block;
+    }
+    
+    #experience, #check-in, #check-out, #numGuests, #numRooms, #btn-reset {
+        width: 100%;
+    }
+    
+    .newsletter-space {
+        padding: 350px;
+    }
+    
+    .subscription-wrapper  {
+        margin: 0px !important;
+    }
+    
+    .house-list {
+        flex-wrap: wrap;
+    }
+    
+    .house-item {
+        width: 100%;
+    }
+    
+    .slide-caption {
+        height: 150px;
+    }
+    
+    .slide-content {
+        padding: 0px;
+    }
+    
+    .footer-payment, .footer-contact, .footer-subscribe {
+        margin-bottom: 10px;
+        font-size: 3vh;
+    }
+    
+    .address-bar, .telephone, .copyright-name {
+        font-size: 2vh;
+    }
+}
+
+@media(max-width: 1199px) {
+    .search-form > .container {
+        text-align: center;
+    }
+    
+    #btn-reset {
+        margin: 0px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1199px) {
+    .form-inline .form-group {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    .form-group {
+        padding: 0 10px 0 10px;
+    }
+    
+    #btn-reset {
+        width: 100%;
+        display: block;
+    }
+    
+    #experience, #check-in, #check-out, #numGuests {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .house-list {
+        flex-wrap: wrap;
+    }
+    
+    .house-item {
+        width: auto;
+        flex: 0 1 calc(50% - 1em);
+    }
+}

@@ -1,0 +1,54 @@
+body {
+  background-color: #e82a45;
+}
+ 
+h1, h2 {
+  font-weight: 300;
+  color: white;
+}
+ 
+h1 {
+  font-size: 60px;
+}
+ 
+h2 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+ 
+input[type="email"].form-control {
+  width: 20em;
+}
+ 
+button {
+  width: 10em;
+}
+ 
+.form-control {
+  margin: 5px 0;
+}
+ 
+.full-length {
+  height: 60vh;
+}
+ 
+.row.vcenter {
+  display: block;
+}
+ 
+@media (min-width: 768px) {
+    .row.vcenter {
+        display: flex;
+        align-items: center;
+    }
+ 
+    .full-length {
+      height: 100vh;
+    }
+ 
+    .form-control {
+      margin: 10px 5px 10px 0;
+    }
+ 
+}
