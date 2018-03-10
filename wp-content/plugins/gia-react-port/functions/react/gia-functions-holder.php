@@ -17,8 +17,7 @@ function add_required_files() {
 
 add_action( 'wp_enqueue_scripts', 'add_required_files' );
 
-/* Grab JSON data from ACF */
-
+/* Grab JSON data from ACF, then add a special endpoint for React consumption */
 function fetch_json( $data ) {
     $args = array (
         'child_of' => get_page_by_path('homes',OBJECT,'page') -> ID
@@ -54,19 +53,20 @@ add_action( 'rest_api_init', 'register_gia_endpoint' );
 
 // Generalized versions of attaching the components (since they essentially have the same structure)
 function attach_required_files($component) {
-    $plugin_dir = $GLOBALS['plugin_dir'];           // Directory of the plugin
-    echo '<div id="' . $component . '"></div>';     // HTML element to be injected upon
+    $plugin_dir = $GLOBALS['plugin_dir'];
 
-    // Enqueue required scripts and styles
+    echo '<div id="' . $component . '"></div>';
+
+    /* Auto search filter */
     wp_enqueue_script( $component . '-js', plugins_url('react/components/'. $component . '/script.js', __FILE__),array(),  '0.0.1', true );
     wp_enqueue_style( $component . '-css', $plugin_dir . 'react/components/' . $component . '/styles.css');
 }
 
-// Auto-search form
-// TODO: Need to connect with the other components (ongoing: use either JSON data or produce filter stuffs)
-// TODO: Find a way to dynamically populate functions (though I think it would be impossible for now.)
-function add_search_form() { attach_required_files('search-form'); }
-function add_house_cards() { attach_required_files('house-cards'); }
+function add_component($name) {
+    add_shortcode('gia-' . $name, attach_required_files($name));
+}
 
-add_shortcode( 'gia-search-form', 'add_search_form' );
-add_shortcode( 'gia-house-cards', 'add_house_cards' );
+
+// Attachment of components actually happens here.
+add_component("search-form");
+add_component("house-list");
